@@ -1,0 +1,46 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+@import "reset";
+// Variables
+//@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+
+
+
+// GRID
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1280px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.5rem 0;
+  background: #fff;
+  box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.15);
+}
+
+.main {
+
+}
+
+.footer {
+
+}
