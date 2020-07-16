@@ -472,6 +472,7 @@ body {
 }
 
 .container {
+  display: flex;
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 1280px;
@@ -480,13 +481,12 @@ body {
 }
 
 .container .section {
-  display: flex;
-  flex: 1 1 auto;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .container .aside {
-  display: flex;
-  max-width: 400px;
+  width: 400px;
 }
 
 .header {
@@ -521,11 +521,19 @@ body {
 
 .article {
   margin: 1.5rem 0;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
-.article__title {
+.article__header h2 {
   font-size: 2rem;
   font-weight: 900;
+  margin: 0 0 1.5rem;
+}
+
+.article__poster img {
+  width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.45);
 }
 

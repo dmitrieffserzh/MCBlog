@@ -7,7 +7,6 @@
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
 
-
 body {
   margin: 4rem 0 0;
   padding: 0;
@@ -16,11 +15,9 @@ body {
   font-size: 1rem;
 }
 
-
-
-
 // GRID
 .container {
+  display: flex;
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 1280px;
@@ -28,12 +25,11 @@ body {
   justify-content: space-between;
 
   & .section {
-    display: flex;
-    flex: 1 1 auto;
+    flex-grow: 1;
+    width: 100%;
   }
   & .aside {
-    display: flex;
-    max-width: 400px;
+    width: 400px;
   }
 }
 
@@ -56,7 +52,6 @@ body {
   min-height: 600px;
 }
 
-
 .section {
   &-header {
     padding: 3rem 0;
@@ -75,9 +70,20 @@ body {
 // ARTICLES
 .article {
   margin: 1.5rem 0;
-  padding: 1rem;
-  &__title {
-    font-size: 2rem;
-    font-weight: 900;
+  padding: 1rem 0;
+  &__header {
+    & h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 0 0 1.5rem;
+    }
+  }
+  &__poster {
+    & img {
+      width: 100%;
+      margin: 0 0 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.45);
+    }
   }
 }
