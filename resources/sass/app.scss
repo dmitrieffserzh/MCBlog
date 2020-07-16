@@ -41,9 +41,15 @@ body {
   z-index: 100;
   padding: 1.5rem 0;
   background: #fff;
-  box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.15);
+  box-shadow: none;
+  transition: box-shadow .3s Linear;
+  &.scroll {
+    box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.15);
+  }
 }
-
+.logo {
+  margin: -10px 0;
+}
 .main {
 
 }
@@ -71,11 +77,15 @@ body {
 .article {
   margin: 1.5rem 0;
   padding: 1rem 0;
+  height: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.45);
   &__header {
     & h2 {
-      font-size: 2rem;
+      font-size: 1rem;
+      color: #fff;
       font-weight: 900;
-      margin: 0 0 1.5rem;
+      margin:  1.5rem;
     }
   }
   &__poster {
@@ -84,6 +94,18 @@ body {
       margin: 0 0 1rem;
       border-radius: 1rem;
       box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.45);
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    flex-direction: column;
+    & .section {
+      width: 100%;
+    }
+    & .aside {
+      width: 100%;
     }
   }
 }
