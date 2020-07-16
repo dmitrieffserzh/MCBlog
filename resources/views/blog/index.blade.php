@@ -1,7 +1,10 @@
 @extends('layouts.blog')
 
 @section('content')
-<h1>Блог</h1>
+    <div class="section-header">
+        <h1 class="section-header__title">Блог</h1>
+        <div class="section-header__subtitle">Таким образом сложившаяся структура организации играет важную роль</div>
+    </div>
     @for($i = 0; $i <= 10; $i++)
         <article class="article">
             <header class="article__header">

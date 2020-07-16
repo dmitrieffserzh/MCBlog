@@ -9,8 +9,8 @@
 
 
 body {
+  margin: 4rem 0 0;
   padding: 0;
-  margin: 0;
   background: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
@@ -24,6 +24,17 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 1280px;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .section {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  & .aside {
+    display: flex;
+    max-width: 400px;
+  }
 }
 
 .header {
@@ -42,5 +53,31 @@ body {
 }
 
 .footer {
+  min-height: 600px;
+}
 
+
+.section {
+  &-header {
+    padding: 3rem 0;
+    &__title {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgba(9, 22, 42, 0.85);
+    }
+  }
+}
+
+// ARTICLES
+.article {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  &__title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
 }
