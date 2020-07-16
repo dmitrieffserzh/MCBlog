@@ -1,11 +1,6 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900");
 @import "reset";
-// Variables
-//@import 'variables';
-
-// Bootstrap
-//@import '~bootstrap/scss/bootstrap';
 
 body {
   margin: 4rem 0 0;
@@ -47,9 +42,11 @@ body {
     box-shadow: 0 1rem 1.5rem 0 rgba(150, 153, 173, 0.15);
   }
 }
+
 .logo {
   margin: -10px 0;
 }
+
 .main {
 
 }
@@ -85,7 +82,7 @@ body {
       font-size: 1rem;
       color: #fff;
       font-weight: 900;
-      margin:  1.5rem;
+      margin: 1.5rem;
     }
   }
   &__poster {
@@ -98,7 +95,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     & .section {
