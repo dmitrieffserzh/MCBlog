@@ -44,12 +44,10 @@
     <script>
 
         $(window).scroll(function() {
-
-            if ($(window).scrollTop() > 5) {
+            if ($(window).scrollTop() > 5)
                 $('.header').addClass('scroll');
-            } else {
+            else
                 $('.header').removeClass('scroll');
-            }
         });
 
 
